@@ -14,7 +14,7 @@ class Block{
         this.hash = this.calculateHash();
     }
     calculateHash(){
-        const cry = crypto.createHash('sha256').update(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data)).digest('hex');
+        return crypto.createHash('sha256').update(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data)).digest('hex')
     }
 
 }

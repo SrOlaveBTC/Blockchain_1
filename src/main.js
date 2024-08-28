@@ -12,4 +12,4 @@ console.log(JSON.stringify(myBlockchain, null, 4));
 console.log('Is Blockchain valid?' + myBlockchain.isChainValid());
 
 console.log(":::::::::::::::GET BLOCK:::::::::::::::::");
-console.log(myBlockchain.getBlock(3));
+console.log(myBlockchain.getBlock(5));
